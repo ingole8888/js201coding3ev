@@ -1,3 +1,11 @@
+// var user=JSON.parse(localStorage.getItem('user'))
+//   let purchasedVouchers=JSON.parse(localStorage.getItem('purchase')) || []
+//   function balance(){
+
+
+//     let wallet_balance=document.getElementById('wallet_balance')
+//     wallet_balance.innerText=JSON.parse(localStorage.getItem('user')).wallet;
+//   }
 var user=JSON.parse(localStorage.getItem('user'))
   let purchasedVouchers=JSON.parse(localStorage.getItem('purchase')) || []
   function balance(){

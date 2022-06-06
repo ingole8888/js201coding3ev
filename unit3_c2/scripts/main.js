@@ -1,10 +1,16 @@
 function get(id){
     return document.getElementById("id").value;
-    id=window.location.reload();
     
 }
 
 let database=JSON.parse(localStorage.getItem("user")) || [];
+function userData(n,e,ad,a){
+    this.name=n;
+    this.email=e;
+    this.address=ad;
+    this.amount=a;
+}
+let base=JSON.parse(localStorage.getItem("user")) || [];
 function userData(n,e,ad,a){
     this.name=n;
     this.email=e;
