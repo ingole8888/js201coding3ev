@@ -4,11 +4,11 @@ function balance(){
     wallet_balance.innerText=JSON.parse(localStorage.getItem('user')).wallet;
   }
   balance()
-let vouchers=JSON.parse(localStorage.getItem('purchase'))
-  function append(vouchers){
-    console.log(vouchers)
+let data=JSON.parse(localStorage.getItem('purchase'))
+  function append(data){
+    console.log(data)
     let container=document.getElementById('purchased_vouchers')
-    vouchers.forEach(function(el){
+    data.foreach(function(el){
       let div=document.createElement('div')
        
          let img=document.createElement('img')
@@ -24,7 +24,7 @@ let vouchers=JSON.parse(localStorage.getItem('purchase'))
     })
 
   }
-  append(vouchers)
+  append(data)
     
 
 

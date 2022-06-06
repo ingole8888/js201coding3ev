@@ -1,5 +1,7 @@
 function get(id){
     return document.getElementById("id").value;
+    id=window.location.reload();
+    
 }
 
 let database=JSON.parse(localStorage.getItem("user")) || [];
@@ -24,4 +26,5 @@ function myFunction(event){
     localStorage.setItem("user",JSON.stringify(database));
     console.log(database);
     //console.log(user);
+    
 }

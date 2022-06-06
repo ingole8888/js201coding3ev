@@ -1,6 +1,7 @@
 var user=JSON.parse(localStorage.getItem('user'))
   let purchasedVouchers=JSON.parse(localStorage.getItem('purchase')) || []
   function balance(){
+
     
     let wallet_balance=document.getElementById('wallet_balance')
     wallet_balance.innerText=JSON.parse(localStorage.getItem('user')).wallet;
@@ -52,7 +53,7 @@ balance()
        purchasedVouchers.push(el)
      user.wallet=balance_value;
      localStorage.setItem('purchase',JSON.stringify(purchasedVouchers))
-     localStorage.setItem('user',JSON.stringify(user))
+     localStorage.setItem('user',JSON.stringify(wallet_balance))
      balance()
      }
      else if(balance_value<0){
